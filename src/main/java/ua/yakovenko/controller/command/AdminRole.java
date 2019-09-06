@@ -7,7 +7,7 @@ public class AdminRole implements Command {
     public String execute(HttpServletRequest request) {
 //        Role role = (Role) request.getSession().getAttribute("role");
 //        if (role != null && role.equals(Role.ADMIN))
-        return "/WEB-INF/admin/adminbasic.jsp";
+        return "/WEB-INF/admin/adminbasis.jsp";
 //        else return "redirect:/";
     }
 }

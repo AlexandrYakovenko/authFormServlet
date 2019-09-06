@@ -42,10 +42,10 @@ public class Login implements Command {
 
         if (user.get().getRole().equals(Role.ADMIN)) {
             CommandUtility.setUserRole(request, Role.ADMIN, username);
-            return "redirect:/conference/admin";
+            return "redirect:/exhibition/admin";
         } else if (user.get().getRole().equals(Role.USER)) {
             CommandUtility.setUserRole(request, Role.USER, username);
-            return "/WEB-INF/user/userbasic.jsp";
+            return "/WEB-INF/user/userbasis.jsp";
         } else {
             CommandUtility.setUserRole(request, Role.GUEST, username);
             return "redirect:/welcome.jsp";
