@@ -16,20 +16,5 @@
     <c:if test="${sessionScope.username eq null}">Guest</c:if>
 </h5>
 
-<c:if test="${sessionScope.username eq null}">
-    <p>Login or Registration please</p>
-    <div class="mt-1">
-        <a class="btn btn-primary" href="${pageContext.request.contextPath}/exhibition/login" role="button">Login</a>
-        <br>
-        <a class="btn btn-primary mt-1" href="${pageContext.request.contextPath}/exhibition/registration" role="button">Registration</a>
-        <br>
-        <a class="btn btn-primary mt-1" href="${pageContext.request.contextPath}/welcome.jsp" role="button">Welcome
-            page</a>
-    </div>
-</c:if>
-
-<br>
-<a href="${pageContext.request.contextPath}/exhibition/exception">Exception</a>
-
 <%@ include file="parts/tail.jsp" %>
 <!-- Page -->

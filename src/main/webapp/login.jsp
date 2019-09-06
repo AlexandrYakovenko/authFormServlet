@@ -32,7 +32,10 @@
 </form>
 
 <div class="mt-2">
-    <a href="${pageContext.request.contextPath}/exhibition/registration">Registration</a>
+    <a href="${pageContext.request.contextPath}/exhibition/registration"
+       class="btn btn-light">
+        Registration
+    </a>
 </div>
 
 <%@ include file="parts/tail.jsp" %>

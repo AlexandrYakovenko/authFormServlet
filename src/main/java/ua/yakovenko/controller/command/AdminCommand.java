@@ -2,7 +2,7 @@ package ua.yakovenko.controller.command;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class AdminRole implements Command {
+public class AdminCommand implements Command {
     @Override
     public String execute(HttpServletRequest request) {
 //        Role role = (Role) request.getSession().getAttribute("role");

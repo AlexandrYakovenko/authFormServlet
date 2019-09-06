@@ -27,7 +27,8 @@ public class Servlet extends HttpServlet {
         commands.put("registration", new Registration(userService));
         commands.put("logout", new LogOut());
         commands.put("exception", new ExceptionCommand());
-        commands.put("admin", new AdminRole());
+        commands.put("admin", new AdminCommand());
+        commands.put("user", new UserCommand());
 
     }
 
