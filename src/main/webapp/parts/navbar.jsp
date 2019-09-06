@@ -25,13 +25,24 @@
 
         <div class="navbar-text mr-3"> ${sessionScope.username}</div>
 
+        <c:if test="${sessionScope.username eq null}">
+            <div class="mr-3">
+                <form action="${pageContext.request.contextPath}/exhibition/login" method="get">
+                    <button type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </c:if>
         <c:if test="${sessionScope.username ne null}">
         <div class="mr-3">
             <form action="${pageContext.request.contextPath}/exhibition/logout" method="post">
-                <button type="submit" class="btn btn-primary">Log out  <i class="fas fa-sign-out-alt"></i>
+                <button type="submit" class="btn btn-primary">
+                    Log Out
                 </button>
             </form>
         </div>
         </c:if>
+
     </div>
 </nav>
