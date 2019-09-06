@@ -1,4 +1,4 @@
-package ua.yakovenko;
+package ua.yakovenko.controller;
 
 import ua.yakovenko.controller.command.*;
 

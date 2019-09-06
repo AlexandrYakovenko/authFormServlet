@@ -4,7 +4,7 @@
   <!-- Servlet -->
   <servlet>
       <servlet-name>Servlet</servlet-name>
-      <servlet-class>ua.yakovenko.Servlet</servlet-class>
+      <servlet-class>ua.yakovenko.controller.Servlet</servlet-class>
   </servlet>
   <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
